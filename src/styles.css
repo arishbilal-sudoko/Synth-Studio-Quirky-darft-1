@@ -77,7 +77,7 @@ html[data-cursor='drag'].cursor-down .cursor--bubble span { transform: scale(0.8
   content: ''; position: absolute; left: 0; right: 0; bottom: 1px; height: 2px; border-radius: 2px;
   background: var(--warm); transform: scaleX(0); transform-origin: right; transition: transform 0.45s var(--ease);
 }
-.nav__links a:hover::after, .nav__cta:hover::after { transform: scaleX(1); transform-origin: left; }
+.nav__links a:hover::after, .nav__cta:hover::after, .nav__links a[aria-current='page']::after { transform: scaleX(1); transform-origin: left; }
 .nav__cta { margin-left: auto; font-size: 18px; font-weight: 700; letter-spacing: -0.02em; }
 .nav__burger { display: none; margin-left: auto; width: 38px; height: 38px; position: relative; }
 .nav__burger span { position: absolute; left: 9px; right: 9px; height: 2px; background: #fff; border-radius: 2px; transition: transform 0.4s var(--ease); }
@@ -390,3 +390,6 @@ a.contact__box:hover { border-color: #777; }
 }
 
 h1, h2, h3, h4 { font-family: 'Google Sans', 'Google Sans Flex', 'Product Sans', 'Segoe UI', system-ui, sans-serif; }
+
+.route-loading { min-height: 100svh; display: grid; place-items: center; background: #f8f5ed; color: #111; font-family: var(--mono); font-size: 12px; }
+main:focus { outline: none; }

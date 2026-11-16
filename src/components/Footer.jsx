@@ -25,21 +25,23 @@ function Contact({ href, children, hue, media, mediaAlt = '' }) {
   );
 }
 
-export default function Footer() {
+export default function Footer({ showContactCards = true }) {
   const [ref, seen] = useInView({ threshold: 0.25 });
   return (
     <footer className="footer" id="contact">
       <TornEdge />
       <div className="footer__inner">
-        <div className="contact">
-          <Contact href={`tel:${SITE.phone.replace(/\s/g, '')}`} hue="#ffb347" media="/cat-calling.gif" mediaAlt="Funny cat talking on a telephone"><u>{SITE.phone}</u></Contact>
-          <Contact hue="#8a6bff">
-            <span className="addr mono">
-              {SITE.address[0]}<br />{SITE.address[1]}<br /><b>{SITE.address[2]}</b>
-            </span>
-          </Contact>
-          <Contact href={`mailto:${SITE.email}`} hue="#ff5fa2" media="/cat-typing.gif" mediaAlt="Black cat typing on a laptop"><u>{SITE.email}</u></Contact>
-        </div>
+        {showContactCards && (
+          <div className="contact">
+            <Contact href={`tel:${SITE.phone.replace(/\s/g, '')}`} hue="#ffb347" media="/cat-calling.gif" mediaAlt="Funny cat talking on a telephone"><u>{SITE.phone}</u></Contact>
+            <Contact hue="#8a6bff">
+              <span className="addr mono">
+                {SITE.address[0]}<br />{SITE.address[1]}<br /><b>{SITE.address[2]}</b>
+              </span>
+            </Contact>
+            <Contact href={`mailto:${SITE.email}`} hue="#ff5fa2" media="/cat-typing.gif" mediaAlt="Black cat typing on a laptop"><u>{SITE.email}</u></Contact>
+          </div>
+        )}
 
         <div className="footer__logo"><Logo size={54} big /></div>
 
@@ -66,7 +68,7 @@ export default function Footer() {
             </div>
             <div>
               <h4>Offers &amp; Services</h4>
-              <ul>{FOOTER_LINKS.offers.map((l) => <li key={l}><a href="#services">{l}</a></li>)}</ul>
+              <ul>{FOOTER_LINKS.offers.map((l) => <li key={l}><a href="/#services">{l}</a></li>)}</ul>
             </div>
           </div>
 

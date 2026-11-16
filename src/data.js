@@ -10,12 +10,12 @@ export const SITE = {
 };
 
 export const NAV = [
-  { label: 'Studio', href: '#studio' },
-  { label: 'Work', href: '#work' },
-  { label: 'Services', href: '#services' },
-  { label: 'Pricing', href: '#pricing' },
+  { label: 'Studio', href: '/studio' },
+  { label: 'Work', href: '/#work' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Pricing', href: '/#pricing' },
 ];
-export const NAV_CTA = { label: 'Contact & Quote', href: '#contact' };
+export const NAV_CTA = { label: 'Contact & Quote', href: '/#contact' };
 
 export const CLIENTS = [
   'Sanvi Mekhela', 'Growthcraft', 'Freight Alliance', 'Amuthi',

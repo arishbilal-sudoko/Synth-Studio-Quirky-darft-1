@@ -4,7 +4,7 @@ export function Logo({ size = 26, text = true, big = false }) {
   if (text) {
     return (
       <span className={`logo logo--wordmark ${big ? 'logo--big' : ''}`}>
-        <img src="/studio-logo.svg" alt="Studio by Synthweb" />
+        <img src="/studio_logo.png" alt="Studio by Synthweb" />
       </span>
     );
   }

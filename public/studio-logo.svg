@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 442" role="img" aria-labelledby="title desc">
+  <title id="title">Studio</title>
+  <desc id="desc">Colourful overlapping studio wordmark</desc>
+  <g font-family="Google Sans, Arial, sans-serif" font-size="260" font-weight="700" text-anchor="middle" opacity="0.94">
+    <text x="196" y="312" fill="#36bbdc">s</text>
+    <text x="306" y="312" fill="#ffc000">t</text>
+    <text x="426" y="312" fill="#3988ee">u</text>
+    <text x="568" y="312" fill="#fb6a3b">d</text>
+    <text x="692" y="312" fill="#ed4b89">i</text>
+    <text x="793" y="312" fill="#4dcdd4">o</text>
+  </g>
+</svg>
